@@ -250,7 +250,6 @@ img {
     color: #ffffff;
     background-color:#188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    
 }
 
 /* -----------------------------------main page 1 ---------------------------------- */
@@ -782,6 +781,90 @@ img {
 .foot-social-link:active {
     background-color:#2196F3;
 }
+
+.submit-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 93px;
+}
+
+.submit-form {
+    display: flex;
+}
+
+.submit-head {
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.email-inp {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    color: #FFFFFF;
+}
+
+.email-inp::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-color: var(--button-bg-color);
+    border: 4px var(--button-bg-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-icon {
+    margin-left: 10px;
+    fill: #FFFFFF;
+}
+
+.submit-btn:hover,
+.submit-btn:focus,
+.submit-btn:active {
+    color: #ffffff;
+    background-color:#188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
 
 .backdrop {
     width: 100vw;
