@@ -22,6 +22,8 @@
 
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .link {
@@ -681,6 +683,7 @@ img {
 .footer-flex {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
     
 }
 
@@ -696,6 +699,15 @@ img {
     color: var(--footer-logo-color);
 }
 
+
+.adress-list {
+    display: block;
+}
+
+.adress-list:not(:last-child) {
+    margin-bottom: 9px;
+} 
+
 .address {
     color: var(--address-color);
     font-family: Roboto, sans-serif; 
@@ -707,16 +719,6 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.adress-list {
-    display: block;
-}
-
-.adress-list:not(:last-child) {
-    margin-bottom: 9px;
-} 
-
-
-
 .address:hover, 
 .address:focus, 
 .address:active {
@@ -727,8 +729,12 @@ img {
     font-family: inherit;
     color: var(--footer-contacts-color);
     font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .footer-con:hover, 
 .footer-con:focus, 
@@ -739,7 +745,8 @@ img {
 .join-box {
     display: flex;
     flex-direction: column;
-    margin-left: 70px;
+    margin-left: 60px;
+    margin-right: 83px;
     
 }
 
@@ -785,7 +792,6 @@ img {
 .submit-box {
     display: flex;
     flex-direction: column;
-    margin-left: 93px;
 }
 
 .submit-form {
@@ -915,14 +921,13 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.modal-close-icon {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-icon:focus,
-.modal-close-icon:hover {
+
+
+.modal-close:focus,
+.modal-close:hover {
     fill: #2196F3;
 }
 
@@ -1003,6 +1008,7 @@ img {
     outline: none;
     transition: border-color 250ms cubic-bezier;
     margin-bottom: 20px;
+    resize: none;
 }
 
 .text-area::placeholder {
